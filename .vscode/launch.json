@@ -1,0 +1,40 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "request": "launch",
+      "name": "server",
+      "type": "node",
+      "program": "${workspaceFolder}/server/server.ts",
+      "cwd": "${workspaceFolder}/server",
+      "env": {},
+      "runtimeExecutable": "/Users/bulent/.deno/bin/deno",
+      "runtimeArgs": [
+        "run",
+        "--unstable",
+        "--inspect-wait",
+        "--allow-all"
+      ],
+      "attachSimplePort": 9229
+    },
+    {
+      "request": "launch",
+      "name": "client",
+      "type": "node",
+      "program": "${workspaceFolder}/client/client.ts",
+      "cwd": "${workspaceFolder}/client",
+      "env": {},
+      "runtimeExecutable": "/Users/bulent/.deno/bin/deno",
+      "runtimeArgs": [
+        "run",
+        "--unstable",
+        "--inspect-wait",
+        "--allow-all"
+      ],
+      "attachSimplePort": 9229
+    }
+  ]
+}

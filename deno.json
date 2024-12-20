@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "dev-server": "deno -A --watch=./server ./server/server.ts",
+    "dev-client": "deno -A --watch=./client ./client/client.ts"
+  },
+  "imports": {
+  }
+}
